@@ -26,6 +26,10 @@ header{
     z-index: 10;
 }
 
+.menulink{
+    display: none;
+}
+
 header li{
     display: inline-block;  
 }
@@ -449,8 +453,13 @@ button:hover{
 }
 
 @media (max-width: 605px){
+    .p1{
+        padding: 0 15px 0 15px;
+    }
+
     li a{
         display: none;
+
     }
 
     form{
@@ -515,6 +524,50 @@ button:hover{
         padding-top: 73px;
         padding-bottom: 92px;
     }
+
+    .download p{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .menulink{
+        display: inline-block;
+        position: fixed;
+        width: 45px;
+        left: 10px;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    .menulink:hover{
+        background: none;
+    }
+
+    .menulink:hover + .menu .logo{
+        display: none;
+    }
+
+    .menulink:hover + .menu a{
+        display: inline;
+        margin-left: 0;
+        font-size: 22px;
+    }
+
+    .menulink:hover + .menu li{
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .menulink:hover + .menu .secondli{
+        margin-bottom: 0;
+    }
+
+    .menulink:hover + .menu ul{
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: flex-start;
+    } 
 }
 
 @media (max-width: 1062px){
@@ -526,4 +579,16 @@ button:hover{
         justify-content: center;
     }
 
+    .div3{
+        padding: 0 20px 0 20px;
+    }
+
 }
+
+@media (max-width: 434px){
+    .div1 h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
